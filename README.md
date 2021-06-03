@@ -36,9 +36,7 @@ unnecessary computations.
 The network is first trained with a **dense** convolutions in the decoder until convergence, and the dense convolutions 
 are then replaced with **sparse** ones. 
 
-This is because the network first needs to learn to predict sparse wavelet 
-coefficients before we can use sparse convolutions.
-
+This is because the network first needs to learn to predict sparse wavelet coefficients before we can use sparse convolutions.
 
 ## 🚗🚦 KITTI 🌳🛣  
 [Depth Hints](https://github.com/nianticlabs/depth-hints) was used as a baseline for KITTI.
@@ -50,15 +48,14 @@ Please see the [KITTI](./KITTI/README.md) directory of this repository for detai
 
 ### 📊 Results 📦 Trained models
 
-Please find below the scores and associated trained models, using **dense** convolutions to predict wavelet 
-coefficients.
+Please find below the scores using **dense** convolutions to predict wavelet coefficients. Download links coming soon!
 
 | Model name | Training modality | Resolution | abs_rel | RMSE | δ<1.25 |Weights | Eigen Predictions | 
 | ---------- | ---------- | ---------- | ----- | ------ | ----- | ---------- | ------- |
-| `Ours Resnet18` | Stereo + DepthHints | 640 x 192 | 0.106 | 4.693 | 0.876 | [Download](https://guthib.com/) | [Download](https://guthib.com/) |
-| `Ours Resnet50` | Stereo + DepthHints | 640 x 192 | 0.105 | 4.625 | 0.879 | [Download](https://guthib.com/) | [Download](https://guthib.com/) |
-| `Ours Resnet18` | Stereo + DepthHints | 1024 x 320 | 0.102 | 4.452 | 0.890 | [Download](https://guthib.com/) | [Download](https://guthib.com/) |
-| `Ours Resnet50` | Stereo + DepthHints | 1024 x 320 | 0.097 | 4.387 | 0.891 | [Download](https://guthib.com/) | [Download](https://guthib.com/) |
+| `Ours Resnet18` | Stereo + DepthHints | 640 x 192 | 0.106 | 4.693 | 0.876 | *Coming soon* | *Coming soon* |
+| `Ours Resnet50` | Stereo + DepthHints | 640 x 192 | 0.105 | 4.625 | 0.879 | *Coming soon* | *Coming soon* |
+| `Ours Resnet18` | Stereo + DepthHints | 1024 x 320 | 0.102 | 4.452 | 0.890 | *Coming soon* | *Coming soon* |
+| `Ours Resnet50` | Stereo + DepthHints | 1024 x 320 | 0.097 | 4.387 | 0.891 | *Coming soon* | *Coming soon* |
 
 ### 🎚 Playing with sparsity
 
@@ -89,7 +86,7 @@ made a few different modifications:
 
 - we supervise depth directly instead of supervising disparity
 - we do not use SSIM
-- we use DenseNet161 as encoder
+- we use DenseNet161 as encoder instead of DenseNet169
 
 ### ⚙ Setup, Training and Evaluation 
 Please see the [NYUv2](./NYUv2/README.md) directory of this repository for details on how to train and evaluate our method.
@@ -100,13 +97,12 @@ Please find below the scores and associated trained models, using **dense** conv
 coefficients.
 
 
-
 | Model name | Encoder | Resolution | abs_rel | RMSE | δ<1.25 | ε_acc | Weights | Eigen Predictions |
 | ---------- | ---------- | ---------- | ---------- | ----- | ----- | ----- | ----- | ------ |
-| `Baseline` | DenseNet | 640 x 480 | 0.1277 | 0.5479 | 0.8430 | 1.7170 | [Download](https://guthib.com/) | [Download](https://guthib.com/) | 
-| `Ours` | DenseNet | 640 x 480 | 0.1258 | 0.5515 | 0.8451 | 1.8070 | [Download](https://guthib.com/) | [Download](https://guthib.com/) |
-| `Baseline` | MobileNetv2 | 640 x 480 | 0.1772 | 0.6638 | 0.7419 | 1.8911 | [Download](https://guthib.com/) | [Download](https://guthib.com/) | 
-| `Ours` | MobileNetv2 | 640 x 480 | 0.1727 | 0.6776 | 0.7380 | 1.9732 | [Download](https://guthib.com/) | [Download](https://guthib.com/) |
+| `Baseline` | DenseNet | 640 x 480 | 0.1277 | 0.5479 | 0.8430 | 1.7170 | *Coming soon* | *Coming soon* | 
+| `Ours` | DenseNet | 640 x 480 | 0.1258 | 0.5515 | 0.8451 | 1.8070 | *Coming soon* | *Coming soon* |
+| `Baseline` | MobileNetv2 | 640 x 480 | 0.1772 | 0.6638 | 0.7419 | 1.8911 | *Coming soon* | *Coming soon* | 
+| `Ours` | MobileNetv2 | 640 x 480 | 0.1727 | 0.6776 | 0.7380 | 1.9732 | *Coming soon* | *Coming soon* |
 
 ### 🎚 Playing with sparsity
 

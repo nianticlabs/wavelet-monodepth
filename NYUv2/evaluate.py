@@ -91,8 +91,6 @@ if args.load_weights_folder is not None:
 
 model.eval()
 
-assert args.use_sparse is False, "Implementation of sparse convolutions not yet released, stay tuned!"
-
 e, e_edges = evaluate(model, rgb, depth, EIGEN_CROP, edges=edges,
                       save_figs=args.save_preds, save_dir=args.load_weights_folder,
                       save_npy=args.save_npy,

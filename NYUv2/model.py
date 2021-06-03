@@ -36,14 +36,11 @@ class Model(nn.Module):
 
         if opts.use_wavelets:
             if opts.use_sparse:
-                # self.use_sparse = True
-                # if opts.use_224:
-                #     raise NotImplementedError
-                #
-                # self.decoder = SparseDecoderWave(enc_features=self.encoder.num_ch_enc, decoder_width=decoder_width)
+                self.use_sparse = True
+                if opts.use_224:
+                    raise NotImplementedError
 
-                print("Sparse decoding implementation will be released soon, stay tuned!")
-                raise NotImplementedError
+                self.decoder = SparseDecoderWave(enc_features=self.encoder.num_ch_enc, decoder_width=decoder_width)
             else:
                 if opts.use_224:
                     decoder_wave = DecoderWave224

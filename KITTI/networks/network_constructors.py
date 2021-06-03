@@ -28,9 +28,7 @@ def make_depth_decoder(encoder, opts):
     print("Building Decoder... ", end="")
     if opts.use_wavelets:
         if opts.use_sparse:
-            # decoder = decoders.SparseDepthWaveProgressiveDecoder(encoder.num_ch_enc)
-            print("Sparse convolutions code coming soon!")
-            raise NotImplementedError
+            decoder = decoders.SparseDepthWaveProgressiveDecoder(encoder.num_ch_enc)
         else:
             decoder = decoders.DepthWaveProgressiveDecoder(
                 encoder.num_ch_enc, opts.scales)

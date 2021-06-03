@@ -88,8 +88,6 @@ def evaluate(opt):
     assert sum((opt.eval_mono, opt.eval_stereo)) == 1, \
         "Please choose mono or stereo evaluation by setting either --eval_mono or --eval_stereo"
 
-    assert opt.use_sparse is False, "Implementation of sparse convolutions not yet released, stay tuned!"
-
     if opt.ext_disp_to_eval is None:
 
         opt.load_weights_folder = os.path.expanduser(opt.load_weights_folder)

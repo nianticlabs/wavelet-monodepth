@@ -68,14 +68,14 @@ In any case, `<path_to_model>` must contain the `depth.pth` weights file.
 ## 📊 Results and 📦 Trained models
 
 Check our paper to find detailed results in different settings using **dense** convolutions to predict wavelet 
-coefficients. You can also download the associated trained models and their predictions:
+coefficients. You can also download the associated trained models and their predictions. Download links coming soon!
 
 | Model name | Training modality | Resolution | abs_rel | RMSE | δ<1.25 |Weights | Eigen Predictions | 
 | ---------- | ---------- | ---------- | ----- | ------ | ----- | ---------- | ------- |
-| `Ours Resnet18` | Stereo + DepthHints | 640 x 192 | 0.106 | 4.693 | 0.876 | [Download](https://guthib.com/) | [Download](https://guthib.com/) |
-| `Ours Resnet50` | Stereo + DepthHints | 640 x 192 | 0.105 | 4.625 | 0.879 | [Download](https://guthib.com/) | [Download](https://guthib.com/) |
-| `Ours Resnet18` | Stereo + DepthHints | 1024 x 320 | 0.102 | 4.452 | 0.890 | [Download](https://guthib.com/) | [Download](https://guthib.com/) |
-| `Ours Resnet50` | Stereo + DepthHints | 1024 x 320 | 0.097 | 4.387 | 0.891 | [Download](https://guthib.com/) | [Download](https://guthib.com/) |
+| `Ours Resnet18` | Stereo + DepthHints | 640 x 192 | 0.106 | 4.693 | 0.876 | **Coming soon** | **Coming soon** |
+| `Ours Resnet50` | Stereo + DepthHints | 640 x 192 | 0.105 | 4.625 | 0.879 | **Coming soon** | **Coming soon** |
+| `Ours Resnet18` | Stereo + DepthHints | 1024 x 320 | 0.102 | 4.452 | 0.890 | **Coming soon** | **Coming soon** |
+| `Ours Resnet50` | Stereo + DepthHints | 1024 x 320 | 0.097 | 4.387 | 0.891 | **Coming soon** | **Coming soon** |
 
 ## 🎚 Playing with sparsity
 
@@ -88,6 +88,10 @@ The following graph shows relative performance decrease when tuning the wavelet 
   <img src="../assets/relative_score_loss_kitti.png" alt="scores kitti" width="500" />
 </p>
 
+<p align="center">
+  <img src="../assets/kitti_sparsify.gif" alt="sparsify kitti" width="500" />
+</p>
+
 Our wavelet based methods allows us to greatly reduce the number of computation in the decoder at a minimal expense in 
 performance. We can therefore trade off performance for FLOPs reduction as shown below (red is abs_rel, green is δ<1.25).
 
@@ -96,8 +100,6 @@ performance. We can therefore trade off performance for FLOPs reduction as shown
 </p>
 
 ## 🎮 Try it yourself!
-
-**Demo notebook coming soon**
 
 To try our method and visualize results with different levels of sparsity, as well as compute the resulting 
 computational saving in FLOPs, use our Jupyter notebook `sparsity_test_notebook.ipynb`.

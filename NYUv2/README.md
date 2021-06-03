@@ -98,15 +98,15 @@ simply remove the `--eval_edges` flag.
 
 ### 📊 Results and 📦 Trained models
 
-Please find below the scores and associated trained models, using **dense** convolutions to predict wavelet 
-coefficients.
+Please find below the scores using **dense** convolutions to predict wavelet coefficients. 
+Download links coming soon!
 
 | Model name | Encoder | Resolution | abs_rel | RMSE | δ<1.25 | ε_acc | Weights | Eigen Predictions |
 | ---------- | ---------- | ---------- | ---------- | ----- | ----- | ----- | ----- | ------ |
-| `Baseline` | DenseNet | 640 x 480 | 0.1277 | 0.5479 | 0.8430 | 1.7170 | [Download](https://guthib.com/) | [Download](https://guthib.com/) | 
-| `Ours` | DenseNet | 640 x 480 | 0.1258 | 0.5515 | 0.8451 | 1.8070 | [Download](https://guthib.com/) | [Download](https://guthib.com/) |
-| `Baseline` | MobileNetv2 | 640 x 480 | 0.1772 | 0.6638 | 0.7419 | 1.8911 | [Download](https://guthib.com/) | [Download](https://guthib.com/) | 
-| `Ours` | MobileNetv2 | 640 x 480 | 0.1727 | 0.6776 | 0.7380 | 1.9732 | [Download](https://guthib.com/) | [Download](https://guthib.com/) |
+| `Baseline` | DenseNet | 640 x 480 | 0.1277 | 0.5479 | 0.8430 | 1.7170 | **Coming soon** | **Coming soon** | 
+| `Ours` | DenseNet | 640 x 480 | 0.1258 | 0.5515 | 0.8451 | 1.8070 | **Coming soon** | **Coming soon** |
+| `Baseline` | MobileNetv2 | 640 x 480 | 0.1772 | 0.6638 | 0.7419 | 1.8911 | **Coming soon** | **Coming soon** | 
+| `Ours` | MobileNetv2 | 640 x 480 | 0.1727 | 0.6776 | 0.7380 | 1.9732 | **Coming soon** | **Coming soon** |
 
 ### 🎚 Playing with sparsity
 
@@ -120,9 +120,11 @@ Computing coefficients at only 5% of the pixels in the decoding process gives a 
   <img src="../assets/relative_score_loss_nyu.png" alt="scores nyu" width="500" />
 </p>
 
-## 🎮 Try it yourself!
+<p align="center">
+  <img src="../assets/nyu_sparsify.gif" alt="sparsify nyu" width="500" />
+</p>
 
-**Demo notebook coming soon**
+## 🎮 Try it yourself!
 
 To try our method and visualize results with different levels of sparsity, as well as compute the resulting 
 computational saving in FLOPs, use our Jupyter notebook `sparsity_test_notebook.ipynb`.
