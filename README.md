@@ -20,6 +20,14 @@
 by exploiting wavelet decomposition.**
 
 
+<p align="center">
+  <a
+href="https://storage.googleapis.com/niantic-lon-static/research/wavelet-monodepth/5min.mp4">
+  <img src="assets/video_thumbnail.png" alt="5 minute CVPR presentation video link" width="400">
+  </a>
+</p>
+
+
 ## 🧑‍🏫 Methodology 
 
 **WaveletMonoDepth** was implemented for two benchmarks, KITTI and NYUv2. For each dataset, we build our code upon 
