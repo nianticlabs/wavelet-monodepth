@@ -9,7 +9,7 @@
 
 ***CVPR 2021***
 
-[[Link to paper]](https://guthib.com/)
+[[Link to paper]](http://arxiv.org/abs/2106.02022)
 
 <p align="center">
   <img src="assets/combo_kitti.gif" alt="kitti gif" width="500" />
@@ -128,7 +128,7 @@ resulting computational saving in FLOPs. Notebooks can be found in `<DATASET>/sp
 
 ## ✏️ 📄 Citation
 
-If you find our work useful or interesting, please consider citing [our paper](https://guthib.com/):
+If you find our work useful or interesting, please consider citing [our paper](http://arxiv.org/abs/2106.02022/):
 
 ```
 @inproceedings{ramamonjisoa-2021-wavelet-monodepth,
