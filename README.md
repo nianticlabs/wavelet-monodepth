@@ -9,7 +9,7 @@
 
 ***CVPR 2021***
 
-[[Link to paper]](https://guthib.com/)
+[[Link to paper]](http://arxiv.org/abs/2106.02022)
 
 <p align="center">
   <img src="assets/combo_kitti.gif" alt="kitti gif" width="500" />
@@ -18,6 +18,14 @@
 
 **We introduce *WaveletMonoDepth*, which improves efficiency of standard encoder-decoder monocular depth estimation methods
 by exploiting wavelet decomposition.**
+
+
+<p align="center">
+  <a
+href="https://storage.googleapis.com/niantic-lon-static/research/wavelet-monodepth/5min.mp4">
+  <img src="assets/video_thumbnail.png" alt="5 minute CVPR presentation video link" width="400">
+  </a>
+</p>
 
 
 ## 🧑‍🏫 Methodology 
@@ -78,7 +86,9 @@ Please find below the scores using **dense** convolutions to predict wavelet coe
 ### 🎚 Playing with sparsity
 
 However the most interesting part is that we can make use of the sparsity property of the predicted wavelet coefficients
-to trade-off performance with efficiency, at a minimal cost on performance.
+to trade-off performance with efficiency, at a minimal cost on performance. We do so by tuning the threshold, and:
+- low thresholds values will lead to high performance but high number of computations,
+- high thresholds will lead to highly efficient computation, as convolutions will be computed only in a few pixel locations. This will have a minimal impact on performance.
 
 <p align="center">
   <img src="assets/kitti_sparsify.gif" alt="sparsify kitti" width="500" />
@@ -90,8 +100,8 @@ Computing coefficients at only 10% of the pixels in the decoding process gives a
   <img src="assets/relative_score_loss_kitti.png" alt="scores kitti" width="500" />
 </p>
 
-Our wavelet based methods allows us to greatly reduce the number of computation in the decoder at a minimal expense in 
-performance. We can therefore trade-off performance for FLOPs reduction.
+Our wavelet based method allows us to greatly reduce the number of computation in the decoder at a minimal expense in 
+performance. We can measure the performance-vs-efficiency trade-off by evaluating scores vs FLOPs.
 
 <p align="center">
   <img src="assets/score_vs_flops.png" alt="scores vs flops kitti" width="500" />
@@ -146,7 +156,7 @@ resulting computational saving in FLOPs. Notebooks can be found in `<DATASET>/sp
 
 ## ✏️ 📄 Citation
 
-If you find our work useful or interesting, please consider citing [our paper](https://guthib.com/):
+If you find our work useful or interesting, please consider citing [our paper](http://arxiv.org/abs/2106.02022/):
 
 ```
 @inproceedings{ramamonjisoa-2021-wavelet-monodepth,
