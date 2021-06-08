@@ -26,8 +26,6 @@ from networks.network_constructors import *
 
 import datasets
 
-from IPython import embed
-
 
 class Trainer:
     def __init__(self, options):

@@ -38,6 +38,24 @@ are then replaced with **sparse** ones.
 
 This is because the network first needs to learn to predict sparse wavelet coefficients before we can use sparse convolutions.
 
+## 🗂 Environment Requirements 🗂 ##
+
+We recommend creating a new Anaconda environment to use WaveletMonoDepth. Use the following to setup a new environment:
+
+```
+conda env create -f environment.yml
+conda activate wavelet-mdp
+```
+
+Our work uses [Pytorch Wavelets](https://github.com/fbcotter/pytorch_wavelets), a great package from Fergal Cotter 
+which implements the Inverse Discrete Wavelet Transform (IDWT) used in our work, and a lot more! 
+To install Pytorch Wavelets, simply run:
+```
+git clone https://github.com/fbcotter/pytorch_wavelets
+cd pytorch_wavelets
+pip install .
+```
+
 ## 🚗🚦 KITTI 🌳🛣  
 [Depth Hints](https://github.com/nianticlabs/depth-hints) was used as a baseline for KITTI.
 
