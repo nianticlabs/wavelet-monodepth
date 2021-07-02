@@ -41,6 +41,9 @@ python train.py
   --normalize_input
 ```
 
+***Note on Training data format:*** [DenseDepth](https://github.com/ialhashim/DenseDepth) provides training data stored stored as 8bits PNGs. They chose to quantize depth maps between 0.7m and 10m with 8bits. Therefore, in order to get metric depth from their data, one should first divide by 255 then multiply by 10. 
+Note that data from the original labeled NYUv2 dataset (see below) is stored in (float) meters.
+
 ## 📋 Evaluation
 
 ### Downloading evaluation depth data
