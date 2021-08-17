@@ -114,8 +114,6 @@ class MonoDataset(data.Dataset):
             self.resize[s] = T.Resize((int(self.height // scale), int(self.width // scale)),
                                       interpolation=interp)
 
-        self.load_depth = self.check_depth()
-
     def preprocess(self, inputs, color_aug):
         """Resize colour images to the required scales and augment if required
 
@@ -225,12 +223,6 @@ class MonoDataset(data.Dataset):
             if ("color", i, -1) in inputs:
                 del inputs[("color", i, -1)]
 
-        if self.load_depth:
-            depth_gt = self.get_depth(folder, frame_index, side, do_flip)
-            for scale in self.target_scales:
-                inputs[("depth_gt", scale)] = self.resize[scale](depth_gt)
-                inputs[("depth_gt", scale)] = np.expand_dims(inputs[("depth_gt", scale)], 0).astype(np.float32)/65535.0
-                inputs[("depth_gt", scale)] = torch.from_numpy(inputs[("depth_gt", scale)].astype(np.float32))
 
         if "s" in self.frame_idxs:
             stereo_T = np.eye(4, dtype=np.float32)
