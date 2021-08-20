@@ -76,12 +76,12 @@ Please see the [KITTI](./KITTI/README.md) directory of this repository for detai
 
 Please find below the scores using **dense** convolutions to predict wavelet coefficients. Download links coming soon!
 
-| Model name | Training modality | Resolution | abs_rel | RMSE | δ<1.25 |Weights | Eigen Predictions | 
-| ---------- | ---------- | ---------- | ----- | ------ | ----- | ---------- | ------- |
-| `Ours Resnet18` | Stereo + DepthHints | 640 x 192 | 0.106 | 4.693 | 0.876 | *Coming soon* | *Coming soon* |
-| `Ours Resnet50` | Stereo + DepthHints | 640 x 192 | 0.105 | 4.625 | 0.879 | *Coming soon* | *Coming soon* |
-| `Ours Resnet18` | Stereo + DepthHints | 1024 x 320 | 0.102 | 4.452 | 0.890 | *Coming soon* | *Coming soon* |
-| `Ours Resnet50` | Stereo + DepthHints | 1024 x 320 | 0.097 | 4.387 | 0.891 | *Coming soon* | *Coming soon* |
+| Model name | Training modality | Resolution | abs_rel | RMSE | δ<1.25 |
+| ---------- | ---------- | ---------- | ----- | ------ | ----- |
+| [`Ours Resnet18`](https://drive.google.com/file/d/1uDJoikUBiDZZOLDMDNsn_eAXByL5g9mi/view?usp=sharing) | Stereo + DepthHints | 640 x 192 | 0.106 | 4.693 | 0.876 |
+| [`Ours Resnet50`](https://drive.google.com/file/d/1UykLnyAlWjqVYWQ5wGK2I1uonYvdJ-2F/view?usp=sharing) | Stereo + DepthHints | 640 x 192 | 0.105 | 4.625 | 0.879 |
+| [`Ours Resnet18`](https://drive.google.com/file/d/1wyXNOgaboQI1s2EwJIuE2APWPVLJwKWM/view?usp=sharing) | Stereo + DepthHints | 1024 x 320 | 0.102 | 4.452 | 0.890 |
+| [`Ours Resnet50`](https://drive.google.com/file/d/1fVkPEv71b-3RBr_n52WPcj3wd-UKVrkF/view?usp=sharing) | Stereo + DepthHints | 1024 x 320 | 0.097 | 4.387 | 0.891 |
 
 ### 🎚 Playing with sparsity
 
@@ -125,12 +125,12 @@ Please find below the scores and associated trained models, using **dense** conv
 coefficients.
 
 
-| Model name | Encoder | Resolution | abs_rel | RMSE | δ<1.25 | ε_acc | Weights | Eigen Predictions |
-| ---------- | ---------- | ---------- | ---------- | ----- | ----- | ----- | ----- | ------ |
-| `Baseline` | DenseNet | 640 x 480 | 0.1277 | 0.5479 | 0.8430 | 1.7170 | *Coming soon* | *Coming soon* | 
-| `Ours` | DenseNet | 640 x 480 | 0.1258 | 0.5515 | 0.8451 | 1.8070 | *Coming soon* | *Coming soon* |
-| `Baseline` | MobileNetv2 | 640 x 480 | 0.1772 | 0.6638 | 0.7419 | 1.8911 | *Coming soon* | *Coming soon* | 
-| `Ours` | MobileNetv2 | 640 x 480 | 0.1727 | 0.6776 | 0.7380 | 1.9732 | *Coming soon* | *Coming soon* |
+| Model name | Encoder | Resolution | abs_rel | RMSE | δ<1.25 | ε_acc |
+| ---------- | ---------- | ---------- | ---------- | ----- | ----- | ----- |
+| [`Baseline`](https://drive.google.com/file/d/1WmGBXBwbR8jh8H_F7TK2LuUNJ1T_wfcQ/view?usp=sharing) | DenseNet | 640 x 480 | 0.1277 | 0.5479 | 0.8430 | 1.7170 |
+| [`Ours`](https://drive.google.com/file/d/1LubjqXEzAd2SI6Zwse6VFvHoobTr4P8Z/view?usp=sharing) | DenseNet | 640 x 480 | 0.1258 | 0.5515 | 0.8451 | 1.8070 |
+| [`Baseline`](https://drive.google.com/file/d/18BU-4u_9NWm67NCLk1On5IA0lJor6DHY/view?usp=sharing) | MobileNetv2 | 640 x 480 | 0.1772 | 0.6638 | 0.7419 | 1.8911 |
+| [`Ours`](https://drive.google.com/file/d/1-dcOO0T_YlFATwZBTg5ejg5evtR319Zi/view?usp=sharing) | MobileNetv2 | 640 x 480 | 0.1727 | 0.6776 | 0.7380 | 1.9732 |
 
 ### 🎚 Playing with sparsity
 

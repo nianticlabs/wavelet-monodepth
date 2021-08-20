@@ -70,12 +70,12 @@ In any case, `<path_to_model>` must contain the `depth.pth` weights file.
 Check our paper to find detailed results in different settings using **dense** convolutions to predict wavelet 
 coefficients. You can also download the associated trained models and their predictions. Download links coming soon!
 
-| Model name | Training modality | Resolution | abs_rel | RMSE | δ<1.25 |Weights | Eigen Predictions | 
-| ---------- | ---------- | ---------- | ----- | ------ | ----- | ---------- | ------- |
-| `Ours Resnet18` | Stereo + DepthHints | 640 x 192 | 0.106 | 4.693 | 0.876 | **Coming soon** | **Coming soon** |
-| `Ours Resnet50` | Stereo + DepthHints | 640 x 192 | 0.105 | 4.625 | 0.879 | **Coming soon** | **Coming soon** |
-| `Ours Resnet18` | Stereo + DepthHints | 1024 x 320 | 0.102 | 4.452 | 0.890 | **Coming soon** | **Coming soon** |
-| `Ours Resnet50` | Stereo + DepthHints | 1024 x 320 | 0.097 | 4.387 | 0.891 | **Coming soon** | **Coming soon** |
+| Model name | Training modality | Resolution | abs_rel | RMSE | δ<1.25 |
+| ---------- | ---------- | ---------- | ----- | ------ | ----- |
+| [`Ours Resnet18`](https://drive.google.com/file/d/1uDJoikUBiDZZOLDMDNsn_eAXByL5g9mi/view?usp=sharing) | Stereo + DepthHints | 640 x 192 | 0.106 | 4.693 | 0.876 |
+| [`Ours Resnet50`](https://drive.google.com/file/d/1UykLnyAlWjqVYWQ5wGK2I1uonYvdJ-2F/view?usp=sharing) | Stereo + DepthHints | 640 x 192 | 0.105 | 4.625 | 0.879 |
+| [`Ours Resnet18`](https://drive.google.com/file/d/1wyXNOgaboQI1s2EwJIuE2APWPVLJwKWM/view?usp=sharing) | Stereo + DepthHints | 1024 x 320 | 0.102 | 4.452 | 0.890 |
+| [`Ours Resnet50`](https://drive.google.com/file/d/1fVkPEv71b-3RBr_n52WPcj3wd-UKVrkF/view?usp=sharing) | Stereo + DepthHints | 1024 x 320 | 0.097 | 4.387 | 0.891 |
 
 ## 🎚 Playing with sparsity
 
