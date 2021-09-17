@@ -11,13 +11,16 @@ from networks.pose_cnn import PoseCNN
 
 def make_depth_encoder(opts):
     print(" Building {}... \t".format(opts.encoder_type), end="")
+    use_pretrained = opts.weights_init == "pretrained"
+    if use_pretrained:
+        print(" Loading pretrained weights... \t", end="")
     if opts.encoder_type == "resnet":
-        encoder = encoders.ResnetEncoder(opts.num_layers, False)
+        encoder = encoders.ResnetEncoder(opts.num_layers, pretrained=use_pretrained)
     elif opts.encoder_type == "mobilenet":
-        encoder = encoders.MobileNetV2Encoder(pretrained=False,
+        encoder = encoders.MobileNetV2Encoder(pretrained=use_pretrained,
                                               use_last_layer=True)
     elif opts.encoder_type == "mobilenet_light":
-        encoder = encoders.MobileNetV2Encoder(pretrained=False,
+        encoder = encoders.MobileNetV2Encoder(pretrained=use_pretrained,
                                               use_last_layer=False)
     else:
         raise NotImplementedError
