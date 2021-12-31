@@ -24,6 +24,7 @@ from layers import depth_to_disp
 MIN_DEPTH=0.1
 MAX_DEPTH=100.0
 
+cv2.setNumThreads(0)
 
 def pil_rgb_loader(path):
     # open path as file to avoid ResourceWarning
